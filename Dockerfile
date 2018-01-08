@@ -28,3 +28,6 @@ RUN unzip NotoSansCJKjp-hinted.zip
 RUN cp -p *.otf /usr/share/fonts/noto/
 RUN chmod 644 /usr/share/fonts/noto/*.otf
 RUN chown root:root /usr/share/fonts/noto/*.otf
+
+# Vi ライクな操作
+RUN bindkey -v
