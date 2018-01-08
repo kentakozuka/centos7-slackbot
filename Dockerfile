@@ -30,4 +30,4 @@ RUN chmod 644 /usr/share/fonts/noto/*.otf
 RUN chown root:root /usr/share/fonts/noto/*.otf
 
 # Vi ライクな操作
-RUN bindkey -v
+RUN echo 'set -o vi' > /etc/profile.d/keybindings.sh
