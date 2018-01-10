@@ -1,6 +1,7 @@
 FROM centos:7
 
 RUN mkdir /home/work/
+RUN mkdir /var/lib/mysql
 RUN yum update -y
 RUN yum install -y	libfontconfig.so.1 \
 					fontconfig \
