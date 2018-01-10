@@ -2,6 +2,9 @@ FROM centos:7
 
 RUN yum update -y
 
+# make work directories
+RUN mkdir /home/work/
+
 # repository
 RUN yum install -y \
 			epel-release \
