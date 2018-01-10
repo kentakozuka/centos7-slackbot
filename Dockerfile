@@ -19,9 +19,9 @@ RUN yum install -y	npm \
 					python36u-pip
 
 RUN npm install -y --prefix=/home/work/modules/ phantomjs
-RUN pip3.6 install selenium==3.8.1 slackbot slacker
+RUN pip3.6 install selenium==3.8.1 slackbot slacker mysql-connector-python
 
-#install japanese
+#install japanese environment for phantomjs
 RUN wget -S -O "NotoSansCJKjp-hinted.zip" "https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip"
 RUN mkdir /usr/share/fonts/noto
 RUN unzip NotoSansCJKjp-hinted.zip
