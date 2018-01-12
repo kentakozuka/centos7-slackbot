@@ -17,4 +17,5 @@ RUN yum install -y \
 			openssl \
 			bzip2 \
 			wget \
-			unzip
+			unzip \
+			mysql
