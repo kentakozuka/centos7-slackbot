@@ -8,7 +8,7 @@ RUN mkdir /home/work/
 # repository
 RUN yum install -y \
 			epel-release \
-			https://centos7.iuscommunity.org/ius-release.rpm \
+			https://centos7.iuscommunity.org/ius-release.rpm
 
 # tools
 RUN yum install -y \
