@@ -3,7 +3,7 @@ FROM centos:7
 RUN yum update -y
 
 # make work directories
-RUN mkdir /home/work/
+RUN mkdir -p /home/work/app
 
 # repository
 RUN yum install -y \
